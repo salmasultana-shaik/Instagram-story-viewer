@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to Right, #f54f5a, #f58529, #f64f59, #d267c4, #00ffff);
+    height: 400px;
+    min-width: 500px;
+    padding: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 400px;
+
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.item {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+}
+
+.head {
+    color: #ffffff;
+
+}
+
+.bar {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.button {
+    color: #ffffff;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.para1 {
+    color: #ffffff;
+    font-family: Roboto;
+    width: 400px;
+}
+
+.head1 {
+    color: #ffffff;
+    font-family: Roboto;
+    width: 400px;
+
+}
+
+.para2 {
+    width: 100px;
+}
+
+.logo1 {
+    display: flex;
+}
+
+@media screen and (min-width:768px) {
+    .content {
+        flex-direction: row;
+
+    }
+
+    .bg-container {
+        background-image: linear-gradient(to Bottom, #f54f5a, #f58529, #f64f59, #d267c4, #00ffff);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .list {
+        display: none;
+
+    }
+
+    .buttons {
+        display: none;
+    }
+}
